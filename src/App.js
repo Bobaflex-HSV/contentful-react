@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+var contentful = require('contentful');
+
+const contentfulSpaceId = 'nqclg9tj58dw';
+const contentfulCdApiAccesstoken =
+  'TwaQ7_8Cf1tObLkdCazTWMrUaU-0J-yhwYe_eYNnw98';
+
+var client = contentful.createClient({
+  space: contentfulSpaceId,
+  accessToken: contentfulCdApiAccesstoken,
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Working....
     </div>
   );
 }
